@@ -1,0 +1,18 @@
+[submodule "WshModules/WshJest"]
+	path = WshModules/WshJest
+	url = https://github.com/tuckn/WshJest.git
+[submodule "WshModules/WshModeJs"]
+	path = WshModules/WshModeJs
+	url = https://github.com/tuckn/WshModeJs.git
+[submodule "WshModules/WshCommander"]
+	path = WshModules/WshCommander
+	url = https://github.com/tuckn/WshCommander.git
+[submodule "WshModules/WshConfigStore"]
+	path = WshModules/WshConfigStore
+	url = https://github.com/tuckn/WshConfigStore.git
+[submodule "WshModules/WshDotEnv"]
+	path = WshModules/WshDotEnv
+	url = https://github.com/tuckn/WshDotEnv.git
+[submodule "WshModules/WshLogger"]
+	path = WshModules/WshLogger
+	url = https://github.com/tuckn/WshLogger.git
