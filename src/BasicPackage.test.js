@@ -15,8 +15,10 @@ var child_process = Wsh.ChildProcess;
 var cli = Wsh.Commander;
 var ConfigStore = Wsh.ConfigStore;
 var dotenv = Wsh.DotEnv;
+var logger = Wsh.Logger;
 
 var isError = util.isError;
+var includes = util.includes;
 
 var _cb = function (fn/* , args */) {
   var args = Array.from(arguments).slice(1);
@@ -170,5 +172,58 @@ describe('BasicPackage', function () {
     // Cleans
     fse.removeSync(envPath);
     expect(fs.existsSync(envPath)).toBe(false);
+  });
+
+  testName = 'Logger';
+  test(testName, function () {
+    var _getLogs = function (outputStr) {
+      var lines = outputStr.split(/\r?\n/);
+      var regLogHeader = new RegExp(
+        '^\\[\\d{4}\\-\\d{2}\\-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\] '
+      );
+
+      return lines.filter(function (line) {
+        return regLogHeader.test(line);
+      });
+    };
+    var _logObjs = [
+      { level: 'error', message: '1 Error message' },
+      { level: 'warn', message: '2 Warning message' },
+      { level: 'success', message: '3 Success message' },
+      { level: 'info', message: '4 Info message' },
+      { level: 'debug', message: '5 Debug message' }
+    ];
+    var logFileName = 'logger-test_option-file.log';
+    var lggr = logger.create('warn/' + logFileName);
+
+    var logPath = path.join(process.cwd(), logFileName);
+    expect(lggr.logPath).toBe(logPath);
+
+    fse.removeSync(logPath);
+    expect(fs.existsSync(logPath)).toBe(false);
+
+    _logObjs.forEach(function (logObj) {
+      lggr[logObj.level](logObj.message);
+    });
+
+    lggr.transport(); // Write the log file
+
+    expect(fs.existsSync(logPath)).toBe(true);
+    var logStr = fs.readFileSync(logPath, { encoding: 'utf8' });
+
+    var outLogs = _getLogs(logStr);
+    expect(outLogs).toHaveLength(_logObjs.length - 3); // Remove info, success
+
+    outLogs.forEach(function (outLog, i) {
+      expect(includes(outLog, ' info ')).toBe(false);
+      expect(includes(outLog, ' success ')).toBe(false);
+
+      var reg = new RegExp(_logObjs[i].level + '\\s+' + _logObjs[i].message + '$');
+      expect(reg.test(outLog)).toBe(true);
+    });
+
+    // Cleans
+    fse.removeSync(logPath);
+    expect(fs.existsSync(logPath)).toBe(false);
   });
 });
