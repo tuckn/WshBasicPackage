@@ -2,6 +2,8 @@
 
 The package to accelerate development on WSH (Windows Script Host). Works in a pure Windows environment.
 
+[Presentation PDF](https://tuckn.net/assets/20240302T131713JST_promoteWshModeJs-en_pub.pdf)
+
 ## Operating environment
 
 Works on JScript in Windows.
