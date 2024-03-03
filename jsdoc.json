@@ -37,9 +37,9 @@
     "openGraph": {
       "title": "WshBasicPackage",
       "type": "website",
-      "image": "https://docs.tuckn.net/WshBasicPackage/img/openGraph-image.png",
+      "image": "https://tuckn.net/docs/WshBasicPackage/img/openGraph-image.png",
       "site_name": "@tuckn/WshBasicPackage",
-      "url": "https://docs.tuckn.net/WshBasicPackage"
+      "url": "https://tuckn.net/docs/WshBasicPackage/"
     },
     "meta": {
       "title": "WshBasicPackage",

@@ -70,40 +70,40 @@ Now,  your JScript can use many helper functions that are defined in the followi
 
 ### Core Modules
 
-- [tuckn/WshPolyfill](https://github.com/tuckn/WshPolyfill)
-- [tuckn/WshUtil](https://github.com/tuckn/WshUtil)
-- [tuckn/WshPath](https://github.com/tuckn/WshPath)
-- [tuckn/WshOS](https://github.com/tuckn/WshOS)
-- [tuckn/WshFileSystem](https://github.com/tuckn/WshFileSystem)
-- [tuckn/WshProcess](https://github.com/tuckn/WshProcess)
-- [tuckn/WshChildProcess](https://github.com/tuckn/WshChildProcess)
-- [tuckn/WshNet](https://github.com/tuckn/WshNet)
-- [tuckn/WshModeJs](https://github.com/tuckn/WshModeJs)
+- [tuckn/WshPolyfill](https://github.com/tuckn/WshPolyfill/)
+- [tuckn/WshUtil](https://github.com/tuckn/WshUtil/)
+- [tuckn/WshPath](https://github.com/tuckn/WshPath/)
+- [tuckn/WshOS](https://github.com/tuckn/WshOS/)
+- [tuckn/WshFileSystem](https://github.com/tuckn/WshFileSystem/)
+- [tuckn/WshProcess](https://github.com/tuckn/WshProcess/)
+- [tuckn/WshChildProcess](https://github.com/tuckn/WshChildProcess/)
+- [tuckn/WshNet](https://github.com/tuckn/WshNet/)
+- [tuckn/WshModeJs](https://github.com/tuckn/WshModeJs/)
 
 ### Basic Apps
 
-- [tuckn/WshCommander](https://github.com/tuckn/WshCommander)
-- [tuckn/WshConfigStore](https://github.com/tuckn/WshConfigStore)
-- [tuckn/WshDotEnv](https://github.com/tuckn/WshDotEnv)
-- [tuckn/WshLogger](https://github.com/tuckn/WshLogger)
+- [tuckn/WshCommander](https://github.com/tuckn/WshCommander/)
+- [tuckn/WshConfigStore](https://github.com/tuckn/WshConfigStore/)
+- [tuckn/WshDotEnv](https://github.com/tuckn/WshDotEnv/)
+- [tuckn/WshLogger](https://github.com/tuckn/WshLogger/)
 
 ## Documentation
 
-See all specifications [here](https://docs.tuckn.net/WshBasicPackage) and also below.
+See all specifications [here](https://tuckn.net/docs/WshBasicPackage/) and also below.
 
-- [WshPolyfill](https://docs.tuckn.net/WshPolyfill)
-- [WshUtil](https://docs.tuckn.net/WshUtil)
-- [WshPath](https://docs.tuckn.net/WshPath)
-- [WshOS](https://docs.tuckn.net/WshOS)
-- [WshFileSystem](https://docs.tuckn.net/WshFileSystem)
-- [WshProcess](https://docs.tuckn.net/WshProcess)
-- [WshChildProcess](https://docs.tuckn.net/WshChildProcess)
-- [WshNet](https://docs.tuckn.net/WshNet)
-- [WshModeJs](https://docs.tuckn.net/WshModeJs)
-- [WshCommander](https://docs.tuckn.net/WshCommander)
-- [WshConfigStore](https://docs.tuckn.net/WshConfigStore)
-- [WshDotEnv](https://docs.tuckn.net/WshDotEnv)
-- [WshLogger](https://docs.tuckn.net/WshLogger)
+- [WshPolyfill](https://tuckn.net/docs/WshPolyfill/)
+- [WshUtil](https://tuckn.net/docs/WshUtil/)
+- [WshPath](https://tuckn.net/docs/WshPath/)
+- [WshOS](https://tuckn.net/docs/WshOS/)
+- [WshFileSystem](https://tuckn.net/docs/WshFileSystem/)
+- [WshProcess](https://tuckn.net/docs/WshProcess/)
+- [WshChildProcess](https://tuckn.net/docs/WshChildProcess/)
+- [WshNet](https://tuckn.net/docs/WshNet/)
+- [WshModeJs](https://tuckn.net/docs/WshModeJs/)
+- [WshCommander](https://tuckn.net/docs/WshCommander/)
+- [WshConfigStore](https://tuckn.net/docs/WshConfigStore/)
+- [WshDotEnv](https://tuckn.net/docs/WshDotEnv/)
+- [WshLogger](https://tuckn.net/docs/WshLogger/)
 
 ## License
 
